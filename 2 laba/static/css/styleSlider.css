@@ -1,0 +1,65 @@
+#viewport {
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: calc(100% * 5);
+    height: 450px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    width: 90%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 0;
+}
+
+#viewSlider {
+    width: calc(30px * 5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewSlide {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.prev {
+    left: 10%;
+    font-size: 40px;
+}
+
+.next {
+    left: 90%;
+    font-size: 40px;
+}
+
+.prev a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.next a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
