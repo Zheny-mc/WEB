@@ -105,21 +105,21 @@ header {
 
 /*navigation menu*/
 
-nav {
+#menu {
     background-color: #00942f;
     overflow: hidden;
 }
 
-nav ul {
+#menu ul {
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+#menu ul li {
     float: left;
 }
 
-nav ul li a {
+#menu ul li a {
     color: #FFFFFF;
     display: block;
     font-size: 11px;
@@ -132,8 +132,8 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-nav ul li a:hover,
-nav ul li.selected a {
+#menu ul li a:hover,
+#menu ul li.selected a {
     background: none repeat scroll 0 0 #353535;
 }
 
@@ -190,8 +190,108 @@ nav ul li.selected a {
     background-image: url("../../images/smenua.png");
 }
 
-.path .sectionLink {
+.mainBlockPath {
+    padding: 10px;
+}
+
+.mainBlockPath .sectionLink {
     font: initial;
     text-decoration: none;
     color: black
+}
+
+.mainBlock {
+    background-color: rgb(255, 255, 255);
+}
+
+.descriptions .titleProduct {
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+}
+
+
+/*--------------------------------------------------*/
+
+.flex-mainBlockContent {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.mainBlockContentLeft {
+    flex-grow: 5;
+}
+
+.mainBlockContentRight {
+    flex-grow: 5;
+}
+
+
+/*--------------------------------------------------*/
+
+.flex-buy {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 15px;
+}
+
+.bottomToAdd {
+    flex-grow: 5;
+}
+
+.bottomToAdd button {
+    font-size: 25px;
+    margin-left: 25%;
+    background-color: #00942f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bloackPrice {
+    margin-top: 19px;
+    flex-grow: 5;
+}
+
+.bloackPrice .price {
+    font-size: xxx-large;
+    color: darkgray;
+    margin-left: 10%;
+    flex-grow: 5;
+}
+
+
+/*--------------------------------------------------*/
+
+.descriptions {
+    margin: 20px;
+}
+
+
+/* footer section */
+
+footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid #E0E0E0;
+    margin: 0 0 5px;
+    padding: 15px 0 15px 20px;
+}
+
+footer #privacy {
+    color: #9B9B9B;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+footer a {
+    color: #9B9B9B;
+    text-decoration: none;
 }

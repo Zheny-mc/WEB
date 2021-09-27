@@ -18,7 +18,7 @@
         <header>
             <!-- Defining the header section of the page -->
 
-            <nav>
+            <nav id="menu">
                 <!-- Defining the navigation menu -->
                 <ul>
                     <li class="selected"><a href="#">Home</a></li>
@@ -76,6 +76,7 @@
                 </ul>
             </section>
 
+
         </header>
 
         <div class="main">
@@ -95,63 +96,59 @@
                     </span>
                 </div>
 
-                <div class="mainBlockContent">
+                <div class="flex-mainBlockContent">
                     <div class="mainBlockContentLeft">
-                        <div class="descriptions">
-                            <span class="name">Название товара</span>
-                        </div>
+                        <img id="productImg" src="..\images\slider_img1.jpg" alt="">
 
-                        <div class="productImg">
-                            <!-- Основной блок слайдера -->
-                            <div id="viewport">
 
-                                <div class="slider" style="left: 0">
-                                    <div class="slide"><img src="../images/slider_img1.jpg" alt=""></div>
-                                    <div class="slide"><img src="../images/slider_img2.jpg" alt=""></div>
-                                    <div class="slide"><img src="../images/slider_img3.jpg" alt=""></div>
-                                    <div class="slide"><img src="../images/slider_img4.jpg" alt=""></div>
-                                    <div class="slide"><img src="../images/slider_img5.jpg" alt=""></div>
-                                </div>
-
-                                <!-- Кнопки-стрелочки -->
-                                <label for="r5" class="prev">
-                                    <a href="#">&#10094</a>
-                                </label>
-                                <label for="r2" class="next">
-                                    <a href="#">&#10095</a>
-                                </label>
-
-                            </div>
-
-                            <div id="viewSlider">
-                                <div class="viewSlide"></div>
-                                <div class="viewSlide"></div>
-                                <div class="viewSlide"></div>
-                                <div class="viewSlide"></div>
-                                <div class="viewSlide"></div>
-                            </div>
-
-                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                            <script src="js/logicSlider.js"></script>
-
-                        </div>
-
-                        <div class="mainBlockContentRight">
-                            <div class="BloackPrice">
+                    </div>
+                    <div class="mainBlockContentRight">
+                        <div class="flex-buy">
+                            <div class="bloackPrice">
                                 <span class="price">200$</span>
                             </div>
 
                             <div class="bottomToAdd">
-                                <button>push</button>
+                                <button>добавить</button>
+                            </div>
+                        </div>
+
+
+                        <div class="descriptions">
+                            <span class="titleProduct">Программирование на C в примерах и задачах</span>
+
+                            <div class="product_props">
+                                <nav id="product__props">
+                                    <ul>
+                                        <p>Home</p>
+                                        <p>Specials</p>
+                                        <p>All Products</p>
+                                        <p>Contact us</p>
+                                        <p>About</p>
+                                        <p>Back To Tutorial</p>
+                                    </ul>
+                                </nav>
                             </div>
 
                         </div>
+
                     </div>
 
                 </div>
 
             </div>
+
         </div>
+
+        <footer>
+            <!-- Defining the footer section of the page -->
+            <div id="privacy">
+                E-Store template © 2011 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br />
+                <a class="link" href="http://www.script-tutorials.com/creating-new-html5css3-single-page-layout-e-store/">Template by Script Tutorials</a>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 
