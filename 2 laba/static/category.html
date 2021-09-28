@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>book#</title>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>E-Store single page layout | Script Tutorials</title>
+    <meta charset="utf-8">
+
     <!-- Linking styles-->
-    <link rel="stylesheet" href="css/styleProduct.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/styleSlider.css">
+    <link rel="stylesheet" href="css/category.css" type="text/css" media="screen">
 
     <!-- Linking scripts -->
     <script src="js/logic.js"></script>
@@ -14,7 +15,9 @@
 </head>
 
 <body>
+
     <div class="container">
+
         <header>
             <!-- Defining the header section of the page -->
 
@@ -73,86 +76,44 @@
                 </ul>
             </section>
 
-
         </header>
 
-        <div class="main">
-
-            <div class="mainBlock">
-                <div class="mainBlockPath">
-                    <span>
-                        <a href="#" title="Главная" class="sectionLink">
-                            <span>Главная</a></span>
-                    </span>
-
-                    <span> > </span>
-
-                    <span>
-                        <a href="#" title="Каталог" class="sectionLink">
-                            <span>Увлечения</span></a>
-                    </span>
-                </div>
-
-                <div class="flex-mainBlockContent">
-                    <div class="mainBlockContentLeft">
-                        <img id="productImg" src="..\images\slider_img1.jpg" alt="">
-
-
-                    </div>
-                    <div class="mainBlockContentRight">
-                        <div class="flex-buy">
-                            <div class="bloackPrice">
-                                <span class="price">200$</span>
+        <div id="main">
+            <!-- Defining submain content section -->
+            <section id="content">
+                <!-- Defining the content section #2 -->
+                <div id="left">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post1.jpg"></a>
                             </div>
-
-                            <div class="bottomToAdd">
-                                <button>добавить</button>
-                            </div>
-                        </div>
-
-
-                        <div class="descriptions">
-                            <span class="titleProduct">Программирование на C в примерах и задачах</span>
-
-                            <div class="product_desc">
-                                
-                                <div class="product_props">
-                                    <ul>
-                                        <p>ID товара</p>        
-                                        <p>Издательство</p>     
-                                        <p>Год издания</p>      
-                                        <p>Кол-во страниц</p>   
-                                        <p>Тираж</p>       
-                                        <p>Вес, г</p>          
-                                    </ul>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Ревность и другие истории</p>
+                                    <p></p>
+                                    <p>Несбе Ю.</p>
+                                </a>
+                                <p>long description here 1</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
                                 </div>
-
-                                <div class="product_value">
-                                    <ul>
-                                        <p>2582182</p>
-                                        <p>Издательство Э</p>
-                                        <p>2020</p>
-                                        <p>560</p>
-                                        <p>2000</p>
-                                        <p>600</p>
-                                    </ul>
+                                <div class="actions">
+                                    <a href="#">Details</a>
+                                    <a href="#">Add to cart</a>
                                 </div>
-
                             </div>
-                        </div>
-                    </div>
-
+                        </li>
+                    </ul>
                 </div>
-
-            </div>
-
+            </section>
         </div>
 
         <footer>
             <!-- Defining the footer section of the page -->
             <div id="privacy">
-                E-Store template © 2011 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br />
-                <a class="link" href="http://www.script-tutorials.com/creating-new-html5css3-single-page-layout-e-store/">Template by Script Tutorials</a>
+                E-Store Book © 2020 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br>
             </div>
         </footer>
 

@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>book#</title>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>E-Store single page layout | Script Tutorials</title>
+    <meta charset="utf-8">
+
     <!-- Linking styles-->
-    <link rel="stylesheet" href="css/styleProduct.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/styleSlider.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
     <!-- Linking scripts -->
     <script src="js/logic.js"></script>
@@ -14,16 +15,21 @@
 </head>
 
 <body>
+
     <div class="container">
+
         <header>
             <!-- Defining the header section of the page -->
 
-            <nav id="menu">
+            <nav>
                 <!-- Defining the navigation menu -->
                 <ul>
                     <li class="selected"><a href="#">Home</a></li>
+                    <li><a href="#">Specials</a></li>
                     <li><a href="#">All Products</a></li>
+                    <li><a href="#">Contact us</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="http://www.script-tutorials.com/creating-new-html5css3-single-page-layout-e-store/">Back To Tutorial</a></li>
                 </ul>
             </nav>
 
@@ -73,79 +79,50 @@
                 </ul>
             </section>
 
-
         </header>
 
-        <div class="main">
-
-            <div class="mainBlock">
-                <div class="mainBlockPath">
-                    <span>
-                        <a href="#" title="Главная" class="sectionLink">
-                            <span>Главная</a></span>
-                    </span>
-
-                    <span> > </span>
-
-                    <span>
-                        <a href="#" title="Каталог" class="sectionLink">
-                            <span>Увлечения</span></a>
-                    </span>
+        <div id="main">
+            <!-- Defining submain content section -->
+            <section id="content">
+                <!-- Defining the content section #2 -->
+                <div id="left">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post1.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Ревность и другие истории</p>
+                                    <p></p>
+                                    <p>Несбе Ю.</p>
+                                </a>
+                                <p>long description here 1</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="#">Details</a>
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="flex-mainBlockContent">
-                    <div class="mainBlockContentLeft">
-                        <img id="productImg" src="..\images\slider_img1.jpg" alt="">
-
-
-                    </div>
-                    <div class="mainBlockContentRight">
-                        <div class="flex-buy">
-                            <div class="bloackPrice">
-                                <span class="price">200$</span>
-                            </div>
-
-                            <div class="bottomToAdd">
-                                <button>добавить</button>
-                            </div>
-                        </div>
-
-
-                        <div class="descriptions">
-                            <span class="titleProduct">Программирование на C в примерах и задачах</span>
-
-                            <div class="product_desc">
-                                
-                                <div class="product_props">
-                                    <ul>
-                                        <p>ID товара</p>        
-                                        <p>Издательство</p>     
-                                        <p>Год издания</p>      
-                                        <p>Кол-во страниц</p>   
-                                        <p>Тираж</p>       
-                                        <p>Вес, г</p>          
-                                    </ul>
-                                </div>
-
-                                <div class="product_value">
-                                    <ul>
-                                        <p>2582182</p>
-                                        <p>Издательство Э</p>
-                                        <p>2020</p>
-                                        <p>560</p>
-                                        <p>2000</p>
-                                        <p>600</p>
-                                    </ul>
-                                </div>
-
-                            </div>
+                <div id="right">
+                    <h3>payment</h3>
+                    
+                    <div class="info">
+                        <a class="title" href="#">ООП на С++</a>
+                        <div class="price">
+                            <span class="usual">$600.00 </span>&nbsp;
+                            <span class="special">$500.00</span>
                         </div>
                     </div>
-
+                        
                 </div>
-
-            </div>
-
+            </section>
         </div>
 
         <footer>
