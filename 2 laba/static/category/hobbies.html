@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>E-Store single page layout | Script Tutorials</title>
+    <meta charset="utf-8">
+
+    <!-- Linking styles-->
+    <link rel="stylesheet" href="../css/category/art.css" type="text/css" media="screen">
+
+    <!-- Linking scripts -->
+    <script src="js/logic.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <!-- Defining the header section of the page -->
+
+            <nav id="menu">
+                <!-- Defining the navigation menu -->
+                <ul>
+                    <li class="selected"><a href="#">Home</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="top_head">
+                <!-- Defining the top head element -->
+                <div class="logo">
+                    <!-- Defining the logo element -->
+                    <a href="http://www.script-tutorials.com/">
+                        <img src="../../images/logo.jpg" title="E-Store template" alt="E-Store template" />
+                    </a>
+                </div>
+
+                <section id="search">
+                    <!-- Search form -->
+                    <form action="#" onsubmit="return false;" method="get">
+                        <input type="text" onfocus="if (this.value =='Search..' ) this.value=''" onblur="if (this.value=='') this.value='Search..'" value="Search.." name="q">
+                        <input type="submit" value="Search">
+                    </form>
+
+                    <ul id="social">
+                        <!-- Social profiles links -->
+                        <li>
+                            <a href="#" title="facebook" rel="external nofollow"><img alt="" src="../../images/facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="twitter" rel="external nofollow"><img alt="" src="../../images/twitter.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="linkedin" rel="external nofollow"><img alt="" src="../../images/linkedin.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="rss" rel="external nofollow"><img alt="" src="../../images/rss.png"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section id="submenu">
+                <!-- Defining the sub menu -->
+                <ul>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Увлечения</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">Психология</a></li>
+                    <li><a href="#">Искусство</a></li>
+                    <li><a href="#">Наука</a></li>
+                </ul>
+            </section>
+
+        </header>
+
+        <div id="main">
+            <!-- Defining submain content section -->
+            <section id="content">
+                <!-- Defining the content section #2 -->
+                <div id="left">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <a href="#"><img alt="" src="../../images/post1.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Ревность и другие истории</p>
+                                    <p></p>
+                                    <p>Несбе Ю.</p>
+                                </a>
+                                <p>long description here 1</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="#">Details</a>
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <!-- Defining the footer section of the page -->
+            <div id="privacy">
+                E-Store Book © 2020 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

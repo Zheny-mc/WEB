@@ -21,35 +21,26 @@
         <header>
             <!-- Defining the header section of the page -->
 
-            <nav>
+            <nav id="menu">
                 <!-- Defining the navigation menu -->
                 <ul>
                     <li class="selected"><a href="#">Home</a></li>
-                    <li><a href="#">Specials</a></li>
                     <li><a href="#">All Products</a></li>
-                    <li><a href="#">Contact us</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="http://www.script-tutorials.com/creating-new-html5css3-single-page-layout-e-store/">Back To Tutorial</a></li>
                 </ul>
             </nav>
 
             <div class="top_head">
                 <!-- Defining the top head element -->
                 <div class="logo">
-                    <!-- Defining the logo element -->
-                    <a href="http://www.script-tutorials.com/">
-                        <img src="../images/logo.jpg" title="E-Store template" alt="E-Store template" />
-                    </a>
+                    <!-- Defining the logo element -->    
+                    <img src="../images/logo.jpg" title="E-Store template" alt="E-Store template" />
                 </div>
 
-                <section id="search">
-                    <!-- Search form -->
-                    <form action="#" onsubmit="return false;" method="get">
-                        <input type="text" onfocus="if (this.value =='Search..' ) this.value=''" onblur="if (this.value=='') this.value='Search..'" value="Search.." name="q">
-                        <input type="submit" value="Search">
-                    </form>
-
-                    <ul id="social">
+                
+                <div class="top_head_right">
+                    
+                    <ul class="social">
                         <!-- Social profiles links -->
                         <li>
                             <a href="#" title="facebook" rel="external nofollow"><img alt="" src="../images/facebook.png"></a>
@@ -64,18 +55,31 @@
                             <a href="#" title="rss" rel="external nofollow"><img alt="" src="../images/rss.png"></a>
                         </li>
                     </ul>
-                </section>
+
+                    <div class="search">
+                        <!-- Search form -->
+                        <form action="#" onsubmit="return false;" method="get">
+                            <input type="text" onfocus="if (this.value =='Search..' ) this.value=''" onblur="if (this.value=='') this.value='Search..'" value="Search.." name="q">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                    
+                    <div class="basket">
+                        <a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/basket.html"><img src="../images/basket.svg" alt=""></a>
+                        <p>Корзина</p>
+                    </div>
+                </div> 
             </div>
 
             <section id="submenu">
                 <!-- Defining the sub menu -->
                 <ul>
-                    <li><a href="#">Общество</a></li>
-                    <li><a href="#">Увлечения</a></li>
-                    <li><a href="#">Образование</a></li>
-                    <li><a href="#">Психология</a></li>
-                    <li><a href="#">Искусство</a></li>
-                    <li><a href="#">Наука</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/art.html">Общество</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/education.html">Увлечения</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/hobbies.html">Образование</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/psychology.html">Психология</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/science.html">Искусство</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/society.html">Наука</a></li>
                 </ul>
             </section>
 
@@ -86,7 +90,7 @@
             <section id="content">
                 <!-- Defining the content section #2 -->
                 <div id="left">
-                    <h3>Last products</h3>
+                    <h3>Products</h3>
                     <ul>
                         <li>
                             <div class="img">
@@ -103,7 +107,6 @@
                                     <span class="st">Our price:</span><strong>$550.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -123,7 +126,6 @@
                                     <span class="st">Our price:</span><strong>$250.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -143,7 +145,6 @@
                                     <span class="st">Our price:</span><strong>$350.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -162,7 +163,6 @@
                                     <span class="st">Our price:</span><strong>$550.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -181,7 +181,6 @@
                                     <span class="st">Our price:</span><strong>$250.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -201,7 +200,6 @@
                                     <span class="st">Our price:</span><strong>$350.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="#">Details</a>
                                     <a href="#">Add to cart</a>
                                 </div>
                             </div>
@@ -291,8 +289,7 @@
         <footer>
             <!-- Defining the footer section of the page -->
             <div id="privacy">
-                E-Store template © 2011 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br />
-                <a class="link" href="http://www.script-tutorials.com/creating-new-html5css3-single-page-layout-e-store/">Template by Script Tutorials</a>
+                E-Store template © 2011 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br/>
             </div>
         </footer>
 

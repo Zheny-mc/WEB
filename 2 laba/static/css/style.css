@@ -39,66 +39,82 @@ header {
 .top_head {
     overflow: hidden;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .logo {
     float: left;
     padding: 37px 0 0 39px;
+    flex-grow: 10;
 }
 
-.logo a img {
-    border-radius: 200px;
+.logo img {
+    border-radius: 10px;
     width: 100px;
 }
 
-#search {
-    float: right;
-    margin: 21px 41px 0 0;
+.top_head_right {
+    flex-grow: 0;
+}
+
+.basket p {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.search {
+    /*margin: 21px 41px 0 0;*/
     text-align: right;
+    position: absolute;
+    top: 45%;
+    left: 20%;
 }
 
-#search form {
-    float: right;
-}
 
-#search form input[type="text"] {
+.search form input[type="text"] {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E0E0E0;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    height: 15px;
-    padding: 5px;
-    width: 129px;
+    height: 30px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 0px;
+    font-size: 15px;
 }
 
-#search form input[type="submit"] {
-    background-color: #FFFFFF;
+.search form input[type="submit"] {
+    background-color: #1cc21c;
     border: 1px solid #E0E0E0;
     border-left-width: 0px;
     color: #383838;
     cursor: pointer;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
-    height: 27px;
-    padding: 0;
-    width: 64px;
+    height: 52px;
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: -10px;
 }
 
-#social {
+.social {
     float: right;
     list-style: none outside none;
-    margin: 0 30px 0 0;
+    margin: 10px 41px 10px 0;
     padding: 0;
 }
 
-#social li {
+.social li {
     float: left;
     padding: 0 0 0 5px;
 }
 
-#social li a:hover img {
+.social li a:hover img {
     margin-top: 1px;
 }
 
@@ -174,7 +190,7 @@ nav ul li.selected a {
 
 #submenu li a {
     background: url("../../images/smenup.png") no-repeat scroll 0 9px transparent;
-    border-right: 1px solid #E0E0E0;
+    /*border-right: 1px solid #E0E0E0;*/
     color: #383838;
     display: block;
     font-size: 12px;
