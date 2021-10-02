@@ -387,7 +387,7 @@ nav ul li.selected a {
     overflow: hidden;
 }
 
-#content #left ul li .info .actions a {
+#content #left ul li .info .actions button {
     border: 1px solid #E0E0E0;
     color: #fd7a01;
     display: block;
@@ -399,11 +399,19 @@ nav ul li.selected a {
     text-decoration: none;
 }
 
-#content #left ul li .info .actions a:first-child {
+#content #left ul li .info .actions button:first-child {
     color: #009832;
     float: left;
 }
 
+#content #left ul li .info .actions button:hover { 
+    background: rgb(170, 241, 206); 
+}
+
+#content #left ul li .info .actions button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
 
 /* footer section */
 

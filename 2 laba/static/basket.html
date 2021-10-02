@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/basket.css" type="text/css" media="screen">
 
     <!-- Linking scripts -->
-    <script src="js/logic.js"></script>
+    <script src="js/logicBasket.js"></script>
 
 </head>
 
@@ -117,10 +117,16 @@
                 <div id="right">
                     <h3>records</h3>
             
-                    <div class="info">
+                    <div class="infoRecord">
                         <div class="price">
                             <span class="usual">ВСЕГО:</span>
-                            <span class="usual">550.00$</span>
+
+                            <div id="sumRecord">
+                                <input type="text" size="25" value="0" id="count">
+                                <input type="button" value="-" id="moins" onclick="minus()">
+                                <input type="button" value="+" id="plus" onclick="plus()">
+                            </div>
+
                         </div>
                     </div>        
                 </div>

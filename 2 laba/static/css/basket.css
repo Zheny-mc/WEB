@@ -353,7 +353,7 @@ nav ul li.selected a {
     padding: 6px 0 6px 8px;
 }
 
-#content #right .info .price {
+#content #right .infoRecord .price {
     color: #383838;
     font-size: 12px;
     font-weight: bold;
@@ -368,8 +368,8 @@ nav ul li.selected a {
     margin-right: 3px;
 }
 
-#content #right .info .price .usual,
-#content #right .info .price .special {
+#content #right .infoRecord .price .usual,
+#content #right .infoRecord .price .special {
     color: #7F7F7F;
     font-size: 16px;
     font-weight: normal;
