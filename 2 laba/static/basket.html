@@ -5,6 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>E-Store single page layout | Script Tutorials</title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Linking styles-->
     <link rel="stylesheet" href="css/basket.css" type="text/css" media="screen">
@@ -104,12 +105,24 @@
                                 </a>
                                 <p>long description here 1</p>
                                 <div class="price">
-                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                    <span class="st">Our price:</span>
+                                    <strong>$550.00</strong>
                                 </div>
 
                                 <div class="del_button">
-                                    <button>delete</button>
+                                    <button id="del">delete</button>
                                 </div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                        $("#del").click(function(){
+                                            count-=550;
+                                            countEl.value = count;
+                                            $("#content #left ul li").empty();
+                                        });
+                                    });
+                                </script>
+
                             </div>
                         </li>
                     </ul>
@@ -120,12 +133,14 @@
                     <div class="infoRecord">
                         <div class="price">
                             <span class="usual">ВСЕГО:</span>
+                                                               
+                            <input type="text" size="5" value="550" class="usual" id="count">
+                            <span class="usual">$</span>
 
-                            <div id="sumRecord">
-                                <input type="text" size="25" value="0" id="count">
-                                <input type="button" value="-" id="moins" onclick="minus()">
-                                <input type="button" value="+" id="plus" onclick="plus()">
-                            </div>
+                            <script>
+                                var countEl = document.getElementById("count");
+                                var count = countEl.value;
+                            </script>
 
                         </div>
                     </div>        
