@@ -206,6 +206,17 @@ nav ul li.selected a {
     background-image: url("../../images/smenua.png");
 }
 
+/* ссылка на заказанные товары */
+.basket #old_record {
+    background-color: #1cc21c;
+    margin: 5px 5px 0 0px;
+}
+
+.basket #old_record a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /* main section */
 

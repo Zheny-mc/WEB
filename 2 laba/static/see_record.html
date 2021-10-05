@@ -8,10 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Linking styles-->
-    <link rel="stylesheet" href="css/basket.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/see_record_style.css" type="text/css" media="screen">
 
     <!-- Linking scripts -->
-    <script src="js/logicBasket.js"></script>
+    <script src="js/see_record.js"></script>
 
 </head>
 
@@ -97,7 +97,7 @@
             <section id="content">
                 <!-- Defining the content section #2 -->
                 <div id="left">
-                    <h3>Products</h3>
+                    <h3>last products</h3>
                     <ul>
                         <li>
                             <div class="img">
@@ -111,49 +111,13 @@
                                 </a>
                                 <p>long description here 1</p>
                                 <div class="price">
-                                    <span class="st">Our price:</span>
+                                    <span class="st">old price:</span>
                                     <strong>$550.00</strong>
                                 </div>
-
-                                <div class="del_button">
-                                    <button id="del">delete</button>
-                                </div>
-
-                                <script>
-                                    $(document).ready(function(){
-                                        $("#del").click(function(){
-                                            count-=550;
-                                            countEl.value = count;
-                                            $("#content #left ul li").empty();
-                                        });
-                                    });
-                                </script>
 
                             </div>
                         </li>
                     </ul>
-                </div>
-                <div id="right">
-                    <h3>records</h3>
-            
-                    <div class="infoRecord">
-                        <div class="price">
-                            <span class="usual">ВСЕГО:</span>
-                                                               
-                            <input type="text" size="5" value="550" class="usual" id="count">
-                            <span class="usual">$</span>
-
-                            <div class="actions">
-                                <button onclick="hello()">buy</button>
-                            </div>
-
-                            <script>
-                                var countEl = document.getElementById("count");
-                                var count = countEl.value;
-                            </script>
-
-                        </div>
-                    </div>        
                 </div>
             </section>
         </div>

@@ -73,6 +73,17 @@ header {
 }
 
 
+.basket #old_record {
+    background-color: #1cc21c;
+    margin: 5px 5px 0 0px;
+}
+
+.basket #old_record a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .search form input[type="text"] {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E0E0E0;
@@ -205,18 +216,6 @@ nav ul li.selected a {
 #submenu li a:hover {
     background-image: url("../../images/smenua.png");
 }
-/* кнопка отложенные товары */
-.basket #old_record {
-    background-color: #1cc21c;
-    margin: 5px 5px 0 0px;
-}
-
-.basket #old_record a {
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-}
-
 
 /* main section */
 
@@ -234,7 +233,7 @@ nav ul li.selected a {
     border: 1px solid #E9E9E9;
     float: left;
     margin: 0 2%;
-    width: 63%;
+    width: 96%;
 }
 
 #content #right {
@@ -277,7 +276,7 @@ nav ul li.selected a {
 #content #left ul li {
     float: left;
     padding-bottom: 21px;
-    width: 33%;
+    width: 22%;
 }
 
 #content #left ul li:hover {
