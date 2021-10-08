@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>E-Store single page layout | Script Tutorials</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Linking styles-->
+    <link rel="stylesheet" href="css/basket.css" type="text/css" media="screen">
+
+    <!-- Linking scripts -->
+    <script src="js/logicBasket.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <!-- Defining the header section of the page -->
+
+            <nav id="menu">
+                <!-- Defining the navigation menu -->
+                <ul>
+                    <li class="selected"><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/index.html">Home</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="top_head">
+                <!-- Defining the top head element -->
+                <div class="logo">
+                    <!-- Defining the logo element -->    
+                    <img src="../images/logo.jpg" title="E-Store template" alt="E-Store template" />
+                </div>
+
+                
+                <div class="top_head_right">
+                    
+                    <ul class="social">
+                        <!-- Social profiles links -->
+                        <li>
+                            <a href="#" title="facebook" rel="external nofollow"><img alt="" src="../images/facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="twitter" rel="external nofollow"><img alt="" src="../images/twitter.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="linkedin" rel="external nofollow"><img alt="" src="../images/linkedin.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="rss" rel="external nofollow"><img alt="" src="../images/rss.png"></a>
+                        </li>
+                    </ul>
+
+                    <div class="search">
+                        <!-- Search form -->
+                        <form action="#" onsubmit="return false;" method="get">
+                            <input type="text" onfocus="if (this.value =='Search..' ) this.value=''" onblur="if (this.value=='') this.value='Search..'" value="Search.." name="q">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                    
+                    
+
+                    <div class="basket">
+                        <a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/basket.html">
+                            <img src="../images/basket.svg" alt=""></a>
+                        <p>Корзина</p>
+                        <p id="old_record"><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/see_record.html">Заказанные товары</a></p>
+                    </div>
+
+                    
+                </div> 
+            </div>
+
+            <section id="submenu">
+                <!-- Defining the sub menu -->
+                <ul>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/art.html">Общество</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/education.html">Увлечения</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/hobbies.html">Образование</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/psychology.html">Психология</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/science.html">Искусство</a></li>
+                    <li><a href="file:///home/evgeny/Documents/Web/WEB/2%20laba/static/category/society.html">Наука</a></li>
+                </ul>
+            </section>
+
+        </header>
+
+        <div id="main">
+            <!-- Defining submain content section -->
+            <section id="content">
+                <!-- Defining the content section #2 -->
+                <div id="left">
+                    <h3>Products</h3>
+                    <ul>
+                        <li id="lot1">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post1.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Ревность и другие истории</p>
+                                    <p></p>
+                                    <p>Несбе Ю.</p>
+                                </a>
+                                <p>long description here 1</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span>
+                                    <strong>550</strong>
+                                    <span>$</span>
+                                </div>
+
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="lot2">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post2.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Кровь и мёд</p>
+                                    <p><br></p>
+                                    <p>Махёрин Ш.</p>
+                                </a>
+                                <p>long description here 2</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$250.00</strong>
+                                </div>
+
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="lot3">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post3.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Правление волков</p>
+                                    <p><br></p>
+                                    <p>Бардуго Л.</p>
+                                </a>
+                                <p>long description here 3</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$350.00</strong>
+                                </div>
+                                
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="lot4">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post4.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Техническая механика. Учебник</p>
+                                    <p>Михайлов А.</p>
+                                </a>
+                                <p>long description here 1</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="lot5">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post5.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>Программирование на Java для начинающих</p>
+                                    <p>Васильев А.</p>
+                                </a>
+                                <p>long description here 2</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$250.00</strong>
+                                </div>
+
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="lot6">
+                            <div class="img">
+                                <a href="#"><img alt="" src="../images/post6.jpg"></a>
+                            </div>
+                            <div class="info">
+                                <a class="title" href="#">
+                                    <p>ООП на С++</p>
+                                    <p><br></p>
+                                    <p>Васильев А.</p>
+                                </a>
+                                <p>long description here 3</p>
+                                <div class="price">
+                                    <span class="st">Our price:</span>
+                                    <strong>$350.00</strong>
+                                </div>
+                                
+                                <div class="del_button">
+                                    <button id="del">delete</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <script>
+                            $("#lot1 #del").click(function(){
+                                count-=550;
+                                countEl.value = count;
+                                $("#content #left ul #lot1").hide();
+                            });
+
+                            $("#lot2  #del").click(function(){
+                                count-=250;
+                                countEl.value = count;
+                                $("#content #left ul #lot2").hide();
+                            });
+
+                            $("#lot3  #del").click(function(){
+                                count-=350;
+                                countEl.value = count;
+                                $("#content #left ul #lot3").hide();
+                            });
+
+                            $("#lot4  #del").click(function(){
+                                count-=550;
+                                countEl.value = count;
+                                $("#content #left ul #lot4").hide();
+                            });
+
+                            $("#lot5 #del").click(function(){
+                                count-=250;
+                                countEl.value = count;
+                                $("#content #left ul #lot5").hide();
+                            });
+                            
+                            $("#lot6 #del").click(function(){
+                                count-=350;
+                                countEl.value = count;
+                                $("#content #left ul #lot6").hide();
+                            });
+
+                        </script>
+                    </ul>
+                </div>
+                <div id="right">
+                    <h3>records</h3>
+            
+                    <div class="infoRecord">
+                        <div class="price">
+                            <span class="usual">ВСЕГО:</span>
+                                                               
+                            <input type="text" size="5" value="550" class="usual" id="count">
+                            <span class="usual">$</span>
+
+                            <div class="actions">
+                                <button onclick="hello()">buy</button>
+                            </div>
+
+                            <script>
+                                var countEl = document.getElementById("count");
+                                var count = countEl.value * 1;
+                            </script>
+
+                        </div>
+                    </div>        
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <!-- Defining the footer section of the page -->
+            <div id="privacy">
+                E-Store template © 2020 <a class="link" href="http://www.script-tutorials.com/">Privacy Policy</a><br>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

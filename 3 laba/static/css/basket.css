@@ -278,6 +278,7 @@ nav ul li.selected a {
     float: left;
     padding-bottom: 21px;
     width: 33%;
+    height: 408px;
 }
 
 #content #left ul li:hover {

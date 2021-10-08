@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="test.css" type="text/css" media="screen">
+    <script defer src="testJS.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="demo1">
+        <button v-if="show" @click="show = false">
+        Toggle
+        </button>
+        
+        <transition name="fade">
+        <p v-if="show">hello</p>
+        </transition>
+    </div>
+
+    <div id="demo2">
+        <button v-if="show" @click="show = false">
+        Toggle
+        </button>
+        
+        <transition name="fade">
+        <p v-if="show">hello</p>
+        </transition>
+    </div>
+  
+  
+</body>
+</html>
